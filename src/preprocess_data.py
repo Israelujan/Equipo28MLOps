@@ -8,32 +8,20 @@ def preprocess_data(data_path):
     # Load the dataset
     data = pd.read_csv(data_path)
 
-    # Separate target and features
-    TARGET = 'Recurred_Yes'
+
+    data_clean = data.drop_duplicates()
+    # Aplicar One-Hot Encoding
+    df_encoded = pd.get_dummies(data_clean, drop_first=True)
     
-    # Define numerical and categorical columns
-    numerical_columns = ['Air temperature [K]', 'Process temperature [K]', 
-                         'Rotational speed [rpm]', 'Torque [Nm]', 'Tool wear [min]']
-    categorical_columns = ['Type', 'TWF', 'HDF', 'PWF', 'OSF', 'RNF']
+    # Normalizar la variable numérica 'Age'
+    scaler = StandardScaler()
+    df_encoded['Age'] = scaler.fit_transform(df_encoded[['Age']])
 
-    # Define preprocessing: scaling numerical features and encoding categorical features
-    preprocessor = ColumnTransformer([
-        ('scaler', StandardScaler(), numerical_columns),
-        ('onehot', OneHotEncoder(drop='first'), categorical_columns)
-    ], remainder='drop')  # Dropping unspecified columns like 'Product ID' and 'UDI'
-
-    # Features (X) and target (y)
-    X = data.drop([TARGET, 'Product ID', 'UDI'], axis=1)
-    y = data[TARGET]
-
-    # Split the data into training and testing sets
+    X = df_encoded.drop(columns=['Recurred_Yes'])
+    y = df_encoded['Recurred_Yes']
     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
-
-    # Apply the preprocessing pipeline to the training and test sets
-    X_train_scaled = preprocessor.fit_transform(X_train)
-    X_test_scaled = preprocessor.transform(X_test)
-
-    return X_train_scaled, X_test_scaled, y_train, y_test
+    
+    return X_train, X_test, y_train, y_test
 
 if __name__ == '__main__':
     # Reading file paths from command-line arguments
