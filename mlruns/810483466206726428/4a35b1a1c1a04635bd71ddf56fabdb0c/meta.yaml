@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/Users/Israel/Downloads/Maestria/Trimestre_5/MLOps/ProyectoML/Fase1Test/mlruns/810483466206726428/4a35b1a1c1a04635bd71ddf56fabdb0c/artifacts
+end_time: 1728882978081
+entry_point_name: ''
+experiment_id: '810483466206726428'
+lifecycle_stage: active
+run_id: 4a35b1a1c1a04635bd71ddf56fabdb0c
+run_name: orderly-bat-55
+run_uuid: 4a35b1a1c1a04635bd71ddf56fabdb0c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1728882972878
+status: 3
+tags: []
+user_id: Israel

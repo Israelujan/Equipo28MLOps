@@ -1,0 +1,139 @@
+schema: '2.0'
+stages:
+  load_data:
+    cmd: python src/load_data.py ./data/raw/Thyroid_Diff.csv ./data/processed/train_test_data.csv
+    deps:
+    - path: ./data/raw/Thyroid_Diff.csv
+      hash: md5
+      md5: cc139ae32a1225f79b4d53313aba59fc
+      size: 43588
+    - path: src/load_data.py
+      hash: md5
+      md5: 3aa73a4b92e9f252c5dea47cd5a93719
+      size: 250
+    outs:
+    - path: ./data/processed/train_test_data.csv
+      hash: md5
+      md5: cc139ae32a1225f79b4d53313aba59fc
+      size: 43588
+  preprocess:
+    cmd: python src/preprocess_data.py ./data/processed/train_test_data.csv ./data/processed/X_train.csv
+      ./data/processed/X_test.csv ./data/processed/y_train.csv ./data/processed/y_test.csv
+    deps:
+    - path: ./data/processed/train_test_data.csv
+      hash: md5
+      md5: cc139ae32a1225f79b4d53313aba59fc
+      size: 43588
+    - path: src/preprocess_data.py
+      hash: md5
+      md5: 10ef8400da5963d13be972338212812f
+      size: 1472
+    outs:
+    - path: ./data/processed/X_test.csv
+      hash: md5
+      md5: 122a8de600cac879240f16ebd5b0409c
+      size: 18748
+    - path: ./data/processed/X_train.csv
+      hash: md5
+      md5: b62b5ff3775d3ae8c34b880c95c44a84
+      size: 72522
+    - path: ./data/processed/y_test.csv
+      hash: md5
+      md5: 92e89c6a7012a2037b36cbd174b9376c
+      size: 503
+    - path: ./data/processed/y_train.csv
+      hash: md5
+      md5: d264bedef3dbe1d6ec317d402d6af3a9
+      size: 1965
+  train_logistic:
+    cmd: python src/train.py data/processed/X_train.csv data/processed/y_train.csv
+      logistic_regression
+    deps:
+    - path: data/processed/X_train.csv
+      hash: md5
+      md5: b62b5ff3775d3ae8c34b880c95c44a84
+      size: 72522
+    - path: data/processed/y_train.csv
+      hash: md5
+      md5: d264bedef3dbe1d6ec317d402d6af3a9
+      size: 1965
+    - path: src/train.py
+      hash: md5
+      md5: a935a9544179128db245e69d42a84094
+      size: 1299
+    outs:
+    - path: models/logistic_regression_model.pkl
+      hash: md5
+      md5: 14717842dd9a255165c3c6ecc76ebb9b
+      size: 2447
+  train_random_forest:
+    cmd: python src/train.py data/processed/X_train.csv data/processed/y_train.csv
+      random_forest
+    deps:
+    - path: data/processed/X_train.csv
+      hash: md5
+      md5: b62b5ff3775d3ae8c34b880c95c44a84
+      size: 72522
+    - path: data/processed/y_train.csv
+      hash: md5
+      md5: d264bedef3dbe1d6ec317d402d6af3a9
+      size: 1965
+    - path: src/train.py
+      hash: md5
+      md5: a935a9544179128db245e69d42a84094
+      size: 1299
+    outs:
+    - path: models/random_forest_model.pkl
+      hash: md5
+      md5: 35bcb788b7170716c4ccd8f58a659a32
+      size: 492009
+  evaluate_logistic:
+    cmd: python src/evaluate.py models/logistic_regression_model.pkl data/processed/X_test.csv
+      data/processed/y_test.csv reports/logistic_evaluation.txt
+    deps:
+    - path: data/processed/X_test.csv
+      hash: md5
+      md5: 122a8de600cac879240f16ebd5b0409c
+      size: 18748
+    - path: data/processed/y_test.csv
+      hash: md5
+      md5: 92e89c6a7012a2037b36cbd174b9376c
+      size: 503
+    - path: models/logistic_regression_model.pkl
+      hash: md5
+      md5: 14717842dd9a255165c3c6ecc76ebb9b
+      size: 2447
+    - path: src/evaluate.py
+      hash: md5
+      md5: 1ce1f5a7d4d9eade2fd8c427a34294cd
+      size: 1047
+    outs:
+    - path: reports/logistic_evaluation.txt
+      hash: md5
+      md5: c6136acebd69f3f76ab87d4e59b04096
+      size: 398
+  evaluate_random_forest:
+    cmd: python src/evaluate.py models/random_forest_model.pkl data/processed/X_test.csv
+      data/processed/y_test.csv reports/random_forest_evaluation.txt
+    deps:
+    - path: data/processed/X_test.csv
+      hash: md5
+      md5: 122a8de600cac879240f16ebd5b0409c
+      size: 18748
+    - path: data/processed/y_test.csv
+      hash: md5
+      md5: 92e89c6a7012a2037b36cbd174b9376c
+      size: 503
+    - path: models/random_forest_model.pkl
+      hash: md5
+      md5: 35bcb788b7170716c4ccd8f58a659a32
+      size: 492009
+    - path: src/evaluate.py
+      hash: md5
+      md5: 1ce1f5a7d4d9eade2fd8c427a34294cd
+      size: 1047
+    outs:
+    - path: reports/random_forest_evaluation.txt
+      hash: md5
+      md5: e5ce09a6df4e9bc2466b0cec51a4b321
+      size: 398

@@ -11,5 +11,5 @@ models:
     max_depth: 10
 
 mlflow:
-  experiment_name: "Predictive Maintenance Analysis V1"
+  experiment_name: "Cancer TV1"
   tracking_uri: "http://127.0.0.1:5000"

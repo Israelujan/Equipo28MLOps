@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/Users/Israel/Downloads/Maestria/Trimestre_5/MLOps/ProyectoML/Fase1Test/mlruns/810483466206726428/57bda540e4d54e42a3be9b344e0e2f75/artifacts
+end_time: 1728882983680
+entry_point_name: ''
+experiment_id: '810483466206726428'
+lifecycle_stage: active
+run_id: 57bda540e4d54e42a3be9b344e0e2f75
+run_name: mysterious-whale-971
+run_uuid: 57bda540e4d54e42a3be9b344e0e2f75
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1728882980769
+status: 3
+tags: []
+user_id: Israel
