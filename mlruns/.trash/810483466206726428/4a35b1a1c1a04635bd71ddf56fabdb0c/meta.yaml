@@ -1,8 +1,9 @@
 artifact_uri: file:///D:/Users/Israel/Downloads/Maestria/Trimestre_5/MLOps/ProyectoML/Fase1Test/mlruns/810483466206726428/4a35b1a1c1a04635bd71ddf56fabdb0c/artifacts
+deleted_time: 1728883448495
 end_time: 1728882978081
 entry_point_name: ''
 experiment_id: '810483466206726428'
-lifecycle_stage: active
+lifecycle_stage: deleted
 run_id: 4a35b1a1c1a04635bd71ddf56fabdb0c
 run_name: orderly-bat-55
 run_uuid: 4a35b1a1c1a04635bd71ddf56fabdb0c

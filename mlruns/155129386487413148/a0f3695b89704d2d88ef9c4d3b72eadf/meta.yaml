@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/Users/Israel/Downloads/Maestria/Trimestre_5/MLOps/ProyectoML/Fase1Test/mlruns/155129386487413148/a0f3695b89704d2d88ef9c4d3b72eadf/artifacts
+end_time: 1728883436853
+entry_point_name: ''
+experiment_id: '155129386487413148'
+lifecycle_stage: active
+run_id: a0f3695b89704d2d88ef9c4d3b72eadf
+run_name: sassy-goat-445
+run_uuid: a0f3695b89704d2d88ef9c4d3b72eadf
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1728883433766
+status: 3
+tags: []
+user_id: Israel
