@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/Users/Israel/Downloads/Maestria/Trimestre_5/MLOps/ProyectoML/Fase1Test/mlruns/155129386487413148/be74d4f900de49c0a105751994a569a8/artifacts
+end_time: 1729452076878
+entry_point_name: ''
+experiment_id: '155129386487413148'
+lifecycle_stage: active
+run_id: be74d4f900de49c0a105751994a569a8
+run_name: efficient-mouse-643
+run_uuid: be74d4f900de49c0a105751994a569a8
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1729452072942
+status: 3
+tags: []
+user_id: Israel
