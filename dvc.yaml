@@ -33,6 +33,8 @@ stages:
       - src/train.py
       - data/processed/X_train.csv
       - data/processed/y_train.csv
+      - data/processed/X_test.csv
+      - data/processed/y_test.csv
     outs:
       - models/random_forest_model.pkl
 
