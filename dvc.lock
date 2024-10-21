@@ -67,8 +67,8 @@ stages:
       size: 1965
     - path: src/train.py
       hash: md5
-      md5: cab1d0e447bfd5fa826851edc8226a9d
-      size: 2283
+      md5: c2a13dbd7b214ac7440577048a2d40cb
+      size: 2300
     outs:
     - path: models/logistic_regression_model.pkl
       hash: md5
