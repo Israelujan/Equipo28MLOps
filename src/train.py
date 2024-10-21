@@ -29,7 +29,7 @@ def train_model(X_train_path, y_train_path, X_test_path, y_test_path, model_type
 
     mlflow.set_experiment(params['mlflow']['experiment_name'])
     mlflow.set_tracking_uri(params['mlflow']['tracking_uri'])
-    
+    #Check
     with mlflow.start_run():
         model.fit(X_train, y_train)
         y_pred = model.predict(X_test)
