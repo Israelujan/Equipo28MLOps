@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/Users/Israel/Downloads/Maestria/Trimestre_5/MLOps/ProyectoML/Fase1Test/mlruns/155129386487413148/c2a70def6a634546bc37b90ea2abf5a3/artifacts
+end_time: 1729482822558
+entry_point_name: ''
+experiment_id: '155129386487413148'
+lifecycle_stage: active
+run_id: c2a70def6a634546bc37b90ea2abf5a3
+run_name: upset-owl-186
+run_uuid: c2a70def6a634546bc37b90ea2abf5a3
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1729482819941
+status: 3
+tags: []
+user_id: Israel

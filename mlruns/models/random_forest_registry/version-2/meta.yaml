@@ -1,0 +1,14 @@
+aliases: []
+creation_timestamp: 1729482822546
+current_stage: None
+description: ''
+last_updated_timestamp: 1729482822546
+name: random_forest_registry
+run_id: c2a70def6a634546bc37b90ea2abf5a3
+run_link: ''
+source: file:///D:/Users/Israel/Downloads/Maestria/Trimestre_5/MLOps/ProyectoML/Fase1Test/mlruns/155129386487413148/c2a70def6a634546bc37b90ea2abf5a3/artifacts/random_forest_model
+status: READY
+status_message: null
+storage_location: file:///D:/Users/Israel/Downloads/Maestria/Trimestre_5/MLOps/ProyectoML/Fase1Test/mlruns/155129386487413148/c2a70def6a634546bc37b90ea2abf5a3/artifacts/random_forest_model
+user_id: null
+version: 2
