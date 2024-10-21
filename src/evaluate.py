@@ -9,7 +9,7 @@ def evaluate_model(model_path, X_test_path, y_test_path, output_path):
     X_test = pd.read_csv(X_test_path)
     y_test = pd.read_csv(y_test_path)
     predictions = model.predict(X_test)
-    report = classification_report(y_test, predictions0, zero_division=1)
+    report = classification_report(y_test, predictions, zero_division=1)
     cm = confusion_matrix(y_test, predictions)
     write_evaluation_report(output_path, report, cm)
 

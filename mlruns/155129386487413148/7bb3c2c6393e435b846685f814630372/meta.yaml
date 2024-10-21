@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/Users/Israel/Downloads/Maestria/Trimestre_5/MLOps/ProyectoML/Fase1Test/mlruns/155129386487413148/7bb3c2c6393e435b846685f814630372/artifacts
+end_time: 1729466587946
+entry_point_name: ''
+experiment_id: '155129386487413148'
+lifecycle_stage: active
+run_id: 7bb3c2c6393e435b846685f814630372
+run_name: grandiose-gull-735
+run_uuid: 7bb3c2c6393e435b846685f814630372
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1729466584954
+status: 3
+tags: []
+user_id: Israel

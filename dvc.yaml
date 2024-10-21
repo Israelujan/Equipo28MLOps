@@ -19,16 +19,18 @@ stages:
       - ${data.processed}y_test.csv
 
   train_logistic:
-    cmd: python src/train.py data/processed/X_train.csv data/processed/y_train.csv logistic_regression
+    cmd: python src/train.py data/processed/X_train.csv data/processed/y_train.csv data/processed/X_test.csv data/processed/y_test.csv logistic_regression
     deps:
       - src/train.py
       - data/processed/X_train.csv
       - data/processed/y_train.csv
+      - data/processed/X_test.csv
+      - data/processed/y_test.csv
     outs:
       - models/logistic_regression_model.pkl
 
   train_random_forest:
-    cmd: python src/train.py data/processed/X_train.csv data/processed/y_train.csv random_forest
+    cmd: python src/train.py data/processed/X_train.csv data/processed/y_train.csv data/processed/X_test.csv data/processed/y_test.csv random_forest
     deps:
       - src/train.py
       - data/processed/X_train.csv

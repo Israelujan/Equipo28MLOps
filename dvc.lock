@@ -47,20 +47,28 @@ stages:
       size: 1965
   train_logistic:
     cmd: python src/train.py data/processed/X_train.csv data/processed/y_train.csv
-      logistic_regression
+      data/processed/X_test.csv data/processed/y_test.csv logistic_regression
     deps:
+    - path: data/processed/X_test.csv
+      hash: md5
+      md5: 122a8de600cac879240f16ebd5b0409c
+      size: 18748
     - path: data/processed/X_train.csv
       hash: md5
       md5: b62b5ff3775d3ae8c34b880c95c44a84
       size: 72522
+    - path: data/processed/y_test.csv
+      hash: md5
+      md5: 92e89c6a7012a2037b36cbd174b9376c
+      size: 503
     - path: data/processed/y_train.csv
       hash: md5
       md5: d264bedef3dbe1d6ec317d402d6af3a9
       size: 1965
     - path: src/train.py
       hash: md5
-      md5: a935a9544179128db245e69d42a84094
-      size: 1299
+      md5: cab1d0e447bfd5fa826851edc8226a9d
+      size: 2283
     outs:
     - path: models/logistic_regression_model.pkl
       hash: md5
@@ -68,25 +76,33 @@ stages:
       size: 2447
   train_random_forest:
     cmd: python src/train.py data/processed/X_train.csv data/processed/y_train.csv
-      random_forest
+      data/processed/X_test.csv data/processed/y_test.csv random_forest
     deps:
+    - path: data/processed/X_test.csv
+      hash: md5
+      md5: 122a8de600cac879240f16ebd5b0409c
+      size: 18748
     - path: data/processed/X_train.csv
       hash: md5
       md5: b62b5ff3775d3ae8c34b880c95c44a84
       size: 72522
+    - path: data/processed/y_test.csv
+      hash: md5
+      md5: 92e89c6a7012a2037b36cbd174b9376c
+      size: 503
     - path: data/processed/y_train.csv
       hash: md5
       md5: d264bedef3dbe1d6ec317d402d6af3a9
       size: 1965
     - path: src/train.py
       hash: md5
-      md5: a935a9544179128db245e69d42a84094
-      size: 1299
+      md5: cab1d0e447bfd5fa826851edc8226a9d
+      size: 2283
     outs:
     - path: models/random_forest_model.pkl
       hash: md5
-      md5: 94b34a02e3be020fdd5eaf30feca8f34
-      size: 493129
+      md5: 75b97e896c8e391c73c94a42885a538d
+      size: 500649
   evaluate_logistic:
     cmd: python src/evaluate.py models/logistic_regression_model.pkl data/processed/X_test.csv
       data/processed/y_test.csv reports/logistic_evaluation.txt
@@ -126,8 +142,8 @@ stages:
       size: 503
     - path: models/random_forest_model.pkl
       hash: md5
-      md5: 94b34a02e3be020fdd5eaf30feca8f34
-      size: 493129
+      md5: 75b97e896c8e391c73c94a42885a538d
+      size: 500649
     - path: src/evaluate.py
       hash: md5
       md5: 1ce1f5a7d4d9eade2fd8c427a34294cd
@@ -135,5 +151,5 @@ stages:
     outs:
     - path: reports/random_forest_evaluation.txt
       hash: md5
-      md5: e5ce09a6df4e9bc2466b0cec51a4b321
+      md5: fa3b365eee53815dbe2c132e65e916c8
       size: 398

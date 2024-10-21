@@ -1,0 +1,14 @@
+aliases: []
+creation_timestamp: 1729466582858
+current_stage: None
+description: ''
+last_updated_timestamp: 1729466582858
+name: logistic_regression_registry
+run_id: 5340155922be4f9ca2e9b206a470d5ff
+run_link: ''
+source: file:///D:/Users/Israel/Downloads/Maestria/Trimestre_5/MLOps/ProyectoML/Fase1Test/mlruns/155129386487413148/5340155922be4f9ca2e9b206a470d5ff/artifacts/logistic_regression_model
+status: READY
+status_message: null
+storage_location: file:///D:/Users/Israel/Downloads/Maestria/Trimestre_5/MLOps/ProyectoML/Fase1Test/mlruns/155129386487413148/5340155922be4f9ca2e9b206a470d5ff/artifacts/logistic_regression_model
+user_id: null
+version: 1

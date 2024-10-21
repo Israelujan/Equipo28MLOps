@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/Users/Israel/Downloads/Maestria/Trimestre_5/MLOps/ProyectoML/Fase1Test/mlruns/155129386487413148/5340155922be4f9ca2e9b206a470d5ff/artifacts
+end_time: 1729466582871
+entry_point_name: ''
+experiment_id: '155129386487413148'
+lifecycle_stage: active
+run_id: 5340155922be4f9ca2e9b206a470d5ff
+run_name: loud-panda-288
+run_uuid: 5340155922be4f9ca2e9b206a470d5ff
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1729466580283
+status: 3
+tags: []
+user_id: Israel

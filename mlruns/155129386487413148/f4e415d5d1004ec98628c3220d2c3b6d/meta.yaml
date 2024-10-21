@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/Users/Israel/Downloads/Maestria/Trimestre_5/MLOps/ProyectoML/Fase1Test/mlruns/155129386487413148/f4e415d5d1004ec98628c3220d2c3b6d/artifacts
+end_time: 1729465219446
+entry_point_name: ''
+experiment_id: '155129386487413148'
+lifecycle_stage: active
+run_id: f4e415d5d1004ec98628c3220d2c3b6d
+run_name: clumsy-loon-364
+run_uuid: f4e415d5d1004ec98628c3220d2c3b6d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1729465216799
+status: 3
+tags: []
+user_id: Israel
