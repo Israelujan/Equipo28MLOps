@@ -13,7 +13,7 @@ def load_params():
     return cfg
 
 params = load_params()
-
+#Entrenamiento del modelo
 def train_model(X_train_path, y_train_path, X_test_path, y_test_path, model_type):
     X_train = pd.read_csv(X_train_path)
     y_train = pd.read_csv(y_train_path).values.ravel()
@@ -41,7 +41,7 @@ def train_model(X_train_path, y_train_path, X_test_path, y_test_path, model_type
 
         # Loggear métricas en MLflow
         mlflow.log_metrics({"accuracy": acc, "precision": prec, "recall": rec})
-        
+
         # Loggear hiperparámetros
         mlflow.log_params(model_params)
         
