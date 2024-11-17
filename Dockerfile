@@ -4,7 +4,7 @@ FROM python:3.9-slim
 WORKDIR /app
 
 # Copy the model and server code
-COPY models/random_forest_model.pkl /app/
+COPY models/logistic_regression_model.pkl /app/
 COPY src/main.py /app/
 
 # Install dependencies
