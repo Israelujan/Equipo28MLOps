@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/Users/Israel/Downloads/Maestria/Trimestre_5/MLOps/ProyectoML/Fase1Test/mlruns/155129386487413148/5dfa38a37ec546eda670baffa2019163/artifacts
+end_time: 1730652281362
+entry_point_name: ''
+experiment_id: '155129386487413148'
+lifecycle_stage: active
+run_id: 5dfa38a37ec546eda670baffa2019163
+run_name: abundant-shoat-165
+run_uuid: 5dfa38a37ec546eda670baffa2019163
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1730652276788
+status: 3
+tags: []
+user_id: Israel

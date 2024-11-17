@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/Users/Israel/Downloads/Maestria/Trimestre_5/MLOps/ProyectoML/Fase1Test/mlruns/155129386487413148/dc6b1875c17d4c6ba5299c82c8a6173a/artifacts
+end_time: 1730661542440
+entry_point_name: ''
+experiment_id: '155129386487413148'
+lifecycle_stage: active
+run_id: dc6b1875c17d4c6ba5299c82c8a6173a
+run_name: magnificent-gnu-981
+run_uuid: dc6b1875c17d4c6ba5299c82c8a6173a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1730661539531
+status: 3
+tags: []
+user_id: Israel

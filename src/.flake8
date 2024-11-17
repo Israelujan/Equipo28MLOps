@@ -1,0 +1,8 @@
+[flake8]
+max-line-length = 88  # Ajusta la longitud máxima de línea
+ignore = E203, E266, E501, W503  # Ignora ciertas reglas específicas
+exclude = 
+    .git,
+    __pycache__,
+    docs/,
+    venv/

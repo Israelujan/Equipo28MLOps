@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/Users/Israel/Downloads/Maestria/Trimestre_5/MLOps/ProyectoML/Fase1Test/mlruns/155129386487413148/ef789020ad504c3497f0654a8a672b15/artifacts
+end_time: 1730654411601
+entry_point_name: ''
+experiment_id: '155129386487413148'
+lifecycle_stage: active
+run_id: ef789020ad504c3497f0654a8a672b15
+run_name: rumbling-shad-589
+run_uuid: ef789020ad504c3497f0654a8a672b15
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1730654408799
+status: 3
+tags: []
+user_id: Israel

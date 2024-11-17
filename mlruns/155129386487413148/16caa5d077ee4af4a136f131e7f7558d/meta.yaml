@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/Users/Israel/Downloads/Maestria/Trimestre_5/MLOps/ProyectoML/Fase1Test/mlruns/155129386487413148/16caa5d077ee4af4a136f131e7f7558d/artifacts
+end_time: 1730654416943
+entry_point_name: ''
+experiment_id: '155129386487413148'
+lifecycle_stage: active
+run_id: 16caa5d077ee4af4a136f131e7f7558d
+run_name: likeable-jay-560
+run_uuid: 16caa5d077ee4af4a136f131e7f7558d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1730654414089
+status: 3
+tags: []
+user_id: Israel

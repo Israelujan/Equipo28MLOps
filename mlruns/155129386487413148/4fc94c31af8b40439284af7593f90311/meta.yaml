@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/Users/Israel/Downloads/Maestria/Trimestre_5/MLOps/ProyectoML/Fase1Test/mlruns/155129386487413148/4fc94c31af8b40439284af7593f90311/artifacts
+end_time: 1730653828721
+entry_point_name: ''
+experiment_id: '155129386487413148'
+lifecycle_stage: active
+run_id: 4fc94c31af8b40439284af7593f90311
+run_name: beautiful-turtle-715
+run_uuid: 4fc94c31af8b40439284af7593f90311
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1730653825793
+status: 3
+tags: []
+user_id: Israel

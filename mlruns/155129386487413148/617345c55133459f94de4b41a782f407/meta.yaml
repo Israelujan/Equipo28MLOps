@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/Users/Israel/Downloads/Maestria/Trimestre_5/MLOps/ProyectoML/Fase1Test/mlruns/155129386487413148/617345c55133459f94de4b41a782f407/artifacts
+end_time: 1730654018863
+entry_point_name: ''
+experiment_id: '155129386487413148'
+lifecycle_stage: active
+run_id: 617345c55133459f94de4b41a782f407
+run_name: gregarious-mule-347
+run_uuid: 617345c55133459f94de4b41a782f407
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1730654016159
+status: 3
+tags: []
+user_id: Israel

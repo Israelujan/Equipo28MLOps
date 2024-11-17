@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/Users/Israel/Downloads/Maestria/Trimestre_5/MLOps/ProyectoML/Fase1Test/mlruns/155129386487413148/29b7ed195cc4494b944d3b61a3a329ad/artifacts
+end_time: 1730654109573
+entry_point_name: ''
+experiment_id: '155129386487413148'
+lifecycle_stage: active
+run_id: 29b7ed195cc4494b944d3b61a3a329ad
+run_name: bemused-cub-788
+run_uuid: 29b7ed195cc4494b944d3b61a3a329ad
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1730654106614
+status: 3
+tags: []
+user_id: Israel
